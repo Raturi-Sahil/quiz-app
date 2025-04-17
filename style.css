@@ -1,0 +1,94 @@
+/* Importing google fonts - Montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(121, 64, 235);
+}
+
+.config-container {
+    width: 410px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.13);
+}
+
+.config-container .config-title {
+    font-size: 1.35rem;
+}
+
+.config-container .config-option {
+    margin-top: 25px;
+}
+
+.config-option .option-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.config-option .category-options {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.config-option .question-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0x 30px;
+    justify-content: center;
+}
+.config-option button {
+
+    padding: 12px;
+    background-color: white;
+    border: 1px solid rgb(203, 114, 240);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.98rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.config-option button.active {
+    border-color: #5145BA ;
+    color: #5145BA;
+    background-color: #dfdafd;
+}
+.config-container .start-quiz-btn {
+    color: white;
+    background-color: #5145BA;
+    border: none;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.config-container .start-quiz-btn:hover {
+    background-color: #403785;
+}
+
+.config-option button:hover {
+    background-color: #dad5fd;
+}
+
+.question-options button {
+    flex: 1 1 10%;
+}
