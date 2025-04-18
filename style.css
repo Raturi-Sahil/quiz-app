@@ -17,14 +17,15 @@ body {
     background-color: rgb(121, 64, 235);
 }
 
-:where(.config-container, .quiz-container) {
+:where(.config-container, .quiz-container, .result-container) {
+    display: none;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.13);
 }
 
 .config-container {
-    
+    display: none;
     width: 410px;
     padding: 20px;
     text-align: center;
@@ -77,9 +78,10 @@ body {
     background-color: #dfdafd;
 }
 .config-container .start-quiz-btn, 
-.quiz-footer .next-question-btn {
+.quiz-footer .next-question-btn, 
+.result-container .try-again-btn{
     color: white;
-    background-color: #5145BA;
+    background-color: #7468dc;
     border: none;
     
     padding: 10px 30px;
@@ -95,8 +97,9 @@ body {
 
 /*Below the hover will only apply to next-quesiton button
 and the bg-color will apply to start-quiz-btn  and not on hover.*/
-.config-container .start-quiz-btn,
-.quiz-footer .next-question-btn:hover {
+.config-container .start-quiz-btn:hover,
+.quiz-footer .next-question-btn:hover,
+.result-container .try-again-btn:hover  {
     background-color: #403785;
 }
 
@@ -198,9 +201,40 @@ and the bg-color will apply to start-quiz-btn  and not on hover.*/
     border-top: 1px solid rgb(222, 218, 218);
 }
 
+.quiz-footer .quiz-status b,
+.result-container .result-message b {
+    font-weight: 500;
+}
+
 .quiz-footer .next-question-btn {
     display: inline-flex;
     gap: 5px;
     align-items: center;
     padding: 9px 17px;
+}
+
+.result-container {
+    display: block;
+    width: 410px;
+    text-align: center;
+    padding: 20px;
+}
+
+.result-container .result-img {
+    width: 110px;
+}
+
+.result-container .result-title {
+    margin-top: 30px;
+}
+
+.result-container .result-message {
+    font-size: 1.09rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.result-container .try-again-btn {
+    margin-top: 20px;
+    padding: 12px 20px
 }
