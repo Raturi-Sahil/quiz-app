@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(121, 64, 235);
+    background-color: #5145BA;
 }
 
 :where(.config-container, .quiz-container, .result-container) {
@@ -25,7 +25,7 @@ body {
 }
 
 .config-container {
-    
+    display: block;
     width: 410px;
     padding: 20px;
     text-align: center;
@@ -115,7 +115,7 @@ and the bg-color will apply to start-quiz-btn  and not on hover.*/
 }
 
 .quiz-container {
-    display: block;
+    
     width: 500px;
 }
 
@@ -140,7 +140,8 @@ and the bg-color will apply to start-quiz-btn  and not on hover.*/
     justify-content: space-between;
     align-items: center;
     border-radius: 7px;
-    background-color: rgb(166, 23, 166);
+    background-color: #A617A6;
+    transition: 0.3s ease-in;
     color: white
 }
 
@@ -166,6 +167,16 @@ and the bg-color will apply to start-quiz-btn  and not on hover.*/
     gap: 15px;
 
 } 
+
+/* Media query code for mobile screens */
+@media (max-width: 624px ){
+    .quiz-container,
+    .config-container,
+    .quiz-container .quiz-content {
+        padding: 20px;
+        width: 100%
+    }
+}
 
 .quiz-content .answer-option {
     display: flex;
@@ -209,6 +220,7 @@ and the bg-color will apply to start-quiz-btn  and not on hover.*/
 
 .quiz-footer .next-question-btn {
     display: inline-flex;
+    visibility: hidden;
     gap: 5px;
     align-items: center;
     padding: 9px 17px;
