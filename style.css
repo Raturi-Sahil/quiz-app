@@ -24,7 +24,7 @@ body {
 }
 
 .config-container {
-    display: none;
+    
     width: 410px;
     padding: 20px;
     text-align: center;
@@ -62,7 +62,7 @@ body {
 .config-option button {
 
     padding: 12px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 1px solid rgb(203, 114, 240);
     border-radius: 10px;
     cursor: pointer;
@@ -93,6 +93,8 @@ body {
     margin-top: 30px;
 }
 
+/*Below the hover will only apply to next-quesiton button
+and the bg-color will apply to start-quiz-btn  and not on hover.*/
 .config-container .start-quiz-btn,
 .quiz-footer .next-question-btn:hover {
     background-color: #403785;
@@ -100,7 +102,7 @@ body {
 
 
 
-.config-option button,
+.config-option button:hover,
 .quiz-content .answer-option:hover {
     background-color: #dad5fd;
 }
