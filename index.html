@@ -46,20 +46,8 @@
             </div>
         </header>
         <div class="quiz-content">
-            <h1 class="quiz-text">Do you know, how to create a function is Javascript?</h1>
-            <ul class="answer-options">
-                <li class="answer-option"><p>create function myfunc()</p></li>
-                <li class="answer-option correct"><p>function myfunc()</p>
-                    <span class="material-symbols-rounded">
-                        check_circle
-                        </span>
-                </li>
-                <li class="answer-option incorrect"><p>def function myfunc()</p>
-                    <span class="material-symbols-rounded">
-                        cancel
-                        </span></li>
-                <li class="answer-option"><p>func myfunc()</p></li>
-            </ul>
+            <h1 class="quiz-text"></h1>
+            <ul class="answer-options"></ul>
         </div>
         <footer class="quiz-footer">
             <p class="question-status"><b>2</b> of <b>10</b> quesions</p>
@@ -78,6 +66,8 @@
         <p class="result-message">You answered <b>3</b> out of <b>5</b> questions correctly. Great job!</p>
         <button class="try-again-btn">Try Again</button>
     </div>
-    
+    <!--make sure questions.js is loaded before script.js-->
+    <script src="javascript/questions.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
